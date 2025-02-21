@@ -49,3 +49,13 @@ class TestMathUtils(unittest.TestCase):
         self.assertEqual(MathUtils.power(2, 2), 4)
         self.assertEqual(MathUtils.power(2.5, 2), 6.25)
         self.assertEqual(MathUtils.power(-1, 2), 1)
+
+    def test_sqrt(self):
+        self.assertEqual(MathUtils.power(25, 2), 5)
+        self.assertEqual(MathUtils.power(2.5, 2), 1.5)
+
+    def test_absolute(self):
+        self.assertEqual(MathUtils.power(1), 1)
+        self.assertEqual(MathUtils.power(2.5), 2.5)
+        self.assertEqual(MathUtils.power(-2.5), 2.5)
+        self.assertEqual(MathUtils.power(-1), 1)
