@@ -51,11 +51,11 @@ class TestMathUtils(unittest.TestCase):
         self.assertEqual(MathUtils.power(-1, 2), 1)
 
     def test_sqrt(self):
-        self.assertEqual(MathUtils.power(25, 2), 5)
-        self.assertEqual(MathUtils.power(2.5, 2), 1.5)
+        self.assertEqual(MathUtils.sqrt(25, 2), 5)
+        self.assertEqual(MathUtils.sqrt(2.5, 2), 1.5)
 
     def test_absolute(self):
-        self.assertEqual(MathUtils.power(1), 1)
-        self.assertEqual(MathUtils.power(2.5), 2.5)
-        self.assertEqual(MathUtils.power(-2.5), 2.5)
-        self.assertEqual(MathUtils.power(-1), 1)
+        self.assertEqual(MathUtils.absolute(1), 1)
+        self.assertEqual(MathUtils.absolute(2.5), 2.5)
+        self.assertEqual(MathUtils.absolute(-2.5), 2.5)
+        self.assertEqual(MathUtils.absolute(-1), 1)
