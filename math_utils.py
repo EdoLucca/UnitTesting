@@ -38,11 +38,11 @@ class MathUtils:
     return a ** b
 
   @staticmethod
-  def sqrt(a: int | float) -> float:
+  def sqrt(a: int | float, b: int | float) -> float:
 
     if a < 0:
       raise ValueError("Cannot the square root of a negative number!")
-    return math.sqrt(a)
+    return a ** (1 / b)
 
   @staticmethod
   def absolute(a: int | float) -> int | float:
