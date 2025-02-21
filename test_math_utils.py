@@ -33,7 +33,7 @@ class TestMathUtils(unittest.TestCase):
         with self.assertRaises(ValueError):
             MathUtils.divide(1, 0)
 
-    def test_divide(self):
+    def test_multiply(self):
         """
         """
         self.assertEqual(MathUtils.multiply(1, 2), 2)
@@ -42,7 +42,7 @@ class TestMathUtils(unittest.TestCase):
         self.assertEqual(MathUtils.multiply(-1, 1.5), -1.5)
 
 
-    def test_divide(self):
+    def test_power(self):
         """
         """
         self.assertEqual(MathUtils.power(1, 2), 1)
