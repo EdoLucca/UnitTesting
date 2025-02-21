@@ -38,7 +38,7 @@ class MathUtils:
     return a ** b
 
   @staticmethod
-  def qrst(a: int | float) -> float:
+  def sqrt(a: int | float) -> float:
 
     if a < 0:
       raise ValueError("Cannot the square root of a negative number!")
