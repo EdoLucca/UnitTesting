@@ -32,3 +32,20 @@ class TestMathUtils(unittest.TestCase):
         self.assertEqual(MathUtils.divide(-1.5, 1.5), -1.0)
         with self.assertRaises(ValueError):
             MathUtils.divide(1, 0)
+
+    def test_divide(self):
+        """
+        """
+        self.assertEqual(MathUtils.multiply(1, 2), 2)
+        self.assertEqual(MathUtils.multiply(10, 2), 20)
+        self.assertEqual(MathUtils.multiply(-1, 1), -1)
+        self.assertEqual(MathUtils.multiply(-1, 1.5), -1.5)
+
+
+    def test_divide(self):
+        """
+        """
+        self.assertEqual(MathUtils.power(1, 2), 1)
+        self.assertEqual(MathUtils.power(2, 2), 4)
+        self.assertEqual(MathUtils.power(2.5, 2), 6.25)
+        self.assertEqual(MathUtils.power(-1, 2), 1)
